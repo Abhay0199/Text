@@ -15,3 +15,7 @@ app.use(function (req, res, next) {
 });
 const port = 2410;
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));
+
+app.get("/mobiles", function (req, res) {
+    res.send("Hello World")
+}
